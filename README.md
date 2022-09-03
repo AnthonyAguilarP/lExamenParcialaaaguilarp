@@ -1,0 +1,2 @@
+# lExamenParcialaaaguilarp
+Elaborado en netbeans
