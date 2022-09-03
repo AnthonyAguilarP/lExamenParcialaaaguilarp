@@ -21,21 +21,16 @@ public class Menu {
     public void SeleccionarOpciones(){
         Scanner sc=new Scanner(System.in);
         System.out.println("Bienvenido");
-        int opc=0;
-        while(opc!=3){
+         String opc="0";
+        while(opc!="3"){
             Opciones();
-            try{
-            opc=sc.nextInt();
-            }catch(Exception e){
-                System.out.println(e.getMessage());
-            }
-            if(opc==3)break;
+            if("3".equals(opc))break;
             switch(opc){
-                case 1:
+                case "1":
                     System.out.print("Ingrese los byte: ");
                     System.out.println(Convertir.getConvertir(sc.next()));
                     break;
-                case 2:
+                case "2":
                     System.out.print("Ingrese los kilobyte: ");
                     System.out.println(sc.next());
                     break;
