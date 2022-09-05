@@ -24,6 +24,7 @@ public class Menu {
          String opc="0";
         while(opc!="3"){
             Opciones();
+            opc=sc.next();
             if("3".equals(opc))break;
             switch(opc){
                 case "1":
